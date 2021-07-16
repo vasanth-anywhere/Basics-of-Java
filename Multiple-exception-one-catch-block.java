@@ -6,7 +6,12 @@ public class Main{
             array[10] = 30/0;    
         }    
         catch(ArithmeticException | ArrayIndexOutOfBoundsException exception){  
-            System.out.println(exception.getMessage());  
+             if ( exception instanceof ArithmeticException) {
+                    System.out.println("ArithmeticException : "+exception.getMessage());
+             }
+             if ( exception instanceof ArrayIndexOutOfBoundsException) {
+                  System.out.println("ArrayIndexOutOfBoundsException : "+exception.getMessage());
+             }
         }    
      }    
 }
