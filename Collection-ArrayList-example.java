@@ -13,6 +13,9 @@ public class Main {
         for(int i=0;i<workList.size();i++) {
             if(workList.get(i) % 5 == 0) workList.remove(workList.get(i));
         }
+        //for(int temp : workList) {
+        //    if(temp%5==0) workList.remove(temp);
+        //}
         System.out.println(workList);
     }
 }
