@@ -17,7 +17,7 @@ public class Main {
 class Employee implements Comparable<Employee>{
     int employeeID;
     String employeeName;
-    public Employee(int employeeID, String employeeName){//, String email, String password, String phoneNumber) {
+    public Employee(int employeeID, String employeeName){
         this.employeeID = employeeID;
         this.employeeName = employeeName;
     }
